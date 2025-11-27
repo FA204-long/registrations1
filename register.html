@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+      <!-- ID input field -->
+      <div class="textbox">
+        <input type="text" name="user_id" placeholder="Your ID" required>
+      </div>
+
+      <!-- Username input -->
+      <div class="textbox">
+        <input type="text" name="username" placeholder="Username" required>
+      </div>
+
+      <!-- Email input -->
+      <div class="textbox">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <!-- Password input -->
+      <div class="textbox">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+
+      <!-- Confirm password input -->
+      <div class="textbox">
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn">Sign Up</button>
+
+      <!--back to login -->
+      <p class="register-link">Already have an account? <a href="index.html">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.registration-form:hover {
+    transform: translateY(-10px);rt6uy
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: rgb(19, 10, 10);
+    font-size: 14px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.input-field:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid #00c3ff;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0099cc;
+}
+
+button[type="submit"]:active {
+    background-color: #007bb5;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #f44336;
+    font-weight: bold;
+}
+
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.signup a:hover {
+    color: #00c3ff;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}

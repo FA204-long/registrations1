@@ -1,0 +1,86 @@
+/* Body background and layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('diu.jpg') no-repeat center center fixed; /* Use your custom background image */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  backdrop-filter: blur(20px);
+}
+
+/* Login and registration container */
+.login-box {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6); /* Subtle shadow */
+  color: #fff;
+  width: 300px;
+  text-align: center;
+}
+
+/* Title (Login/Register) */
+.login-box h2 {
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff; /* Underline style */
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Options section (checkbox + link) */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* "Forgot Password?" link */
+.options a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* Submit button */
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+/* Register/Login link at bottom */
+.register-link {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.register-link a {
+  color: #fff;
+  text-decoration: underline;
+}
